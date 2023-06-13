@@ -36,6 +36,24 @@ t.each do |a|
   puts a
 end
 
+# カンマ区切りの3つのデータの入力
+n = gets.chomp
+s = n.split(",")
+
+s.each do |a|
+  puts a
+end
+
+# カンマ区切りのN個のデータ入力
+n = gets.chomp.to_i
+input = gets.chomp
+strings = input.split(",")
+
+n.times do
+  puts strings.shift
+end
+
+
 # A 君の 1 年前の体重は 10 kg でしたが、現在は N kg です。 A 君の体重は何 kg 増えましたか？
 n = gets.chomp.to_i
 t = 10 - n
