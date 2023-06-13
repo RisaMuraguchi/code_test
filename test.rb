@@ -70,3 +70,44 @@ n, x, y = gets.chomp.split.map(&:to_i)
     puts a + b
   end
 end
+
+# あなたは給与の計算プログラムを作成しています。
+# 時給 N と働いた時間 M が改行区切りで与えられるので給与を出力してください。
+n = gets.chomp.to_i
+m = gets.chomp.to_i
+t = n * m
+puts t
+
+
+# 入力された整数がグレゴリオ暦でうるう年であるか判定するプログラムを書いてください。
+# 西暦が4で割り切れる年は閏年。
+# ただし、100で割り切れる年は閏年ではない。
+# ただし、400で割り切れる年は閏年。
+line_size = gets.to_i
+line_size.times do
+  year = gets.to_i
+  # うるう年判定
+  if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+    print year," is a leap year\n"
+  else
+    print year," is not a leap year\n"
+  end
+end
+
+
+# あなたは友人に向けてメールを送ろうとしています。
+# ただメールを送るだけではつまらないので、文字列を装飾して送ることにしました。
+# 送りたい文字列の周囲を "+" で枠のように囲んで装飾します。
+
+# このような処理を手作業で行いたくないため、プログラムで装飾しようとしています。
+# この "+" の枠で囲む装飾をするプログラムを書いてください。
+
+# 入力例 1 では "Paiza" という文字列を送ります。
+# この文字を枠で囲み装飾すると、以下のようになります。
+# +++++++
+# +Paiza+
+# +++++++
+n = gets.chomp
+puts "+" * (n.length + 2)
+puts "+#{n}+"
+puts "+" * (n.length + 2)
