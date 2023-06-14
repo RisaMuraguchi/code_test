@@ -72,3 +72,9 @@ s.each { |val| puts val } #配列.each { |a| 処理 } または 配列.each do |
 
 # 5 行の整数の入力
 5.times { puts gets.to_i }
+
+# 2 つの整数の半角スペース区切りの入力
+a, b = gets.split(' ').map(&:to_i)
+
+puts a
+puts b
