@@ -69,3 +69,6 @@ puts t
 # 半角スペース区切りの 10 個の入力
 s = gets.split(' ')
 s.each { |val| puts val } #配列.each { |a| 処理 } または 配列.each do |a| 処理 end で配列の各要素を変数 a に代入しながら 処理 を行うことができる
+
+# 5 行の整数の入力
+5.times { puts gets.to_i }
