@@ -53,6 +53,11 @@ n.times do
   puts strings.shift
 end
 
+# 10行のデータの入力
+10.times { puts gets }
+
+# 3つの文字列の半角スペース区切りでの分割
+puts "He likes paiza".split(" ").join("\n")
 
 # A 君の 1 年前の体重は 10 kg でしたが、現在は N kg です。 A 君の体重は何 kg 増えましたか？
 n = gets.chomp.to_i
