@@ -70,3 +70,10 @@ end
 dozens = gets.chomp.to_i
 total_pencils = dozens * 12
 puts total_pencils
+
+
+# 以下の数列の要素数を出力してください。
+# 5 1 3 4 5 12 6 8 1 3
+sequence = [5, 1, 3, 4, 5, 12, 6, 8, 1, 3]
+count = sequence.length
+puts count
