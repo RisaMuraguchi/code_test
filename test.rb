@@ -81,6 +81,12 @@ puts b
 
 # 2 行目で与えられる N 個の整数の入力
 n = gets.to_i
-a = gets.split(' ').map(&:to_i)  #a = gets.split(' ').map(&:to_i) で 1 行の入力を半角スペースで区切って整数に変換した配列を生成
+a = gets.split(' ').map(&:to_i)  #1行の入力を半角スペースで区切って整数に変換した配列を生成
 
 a.each { |val| puts val }
+
+# 1 行目で与えられる N 個の整数の入力
+a = gets.split(' ').map(&:to_i) #1 行の入力を半角スペースで区切って整数に変換した配列を生成
+n = a.shift #shift メソッドは配列の先頭の要素を削除して取得することができる
+
+a.each { |val| puts val } 
