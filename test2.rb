@@ -77,3 +77,8 @@ puts total_pencils
 sequence = [5, 1, 3, 4, 5, 12, 6, 8, 1, 3]
 count = sequence.length
 puts count
+
+# 要素数 N の数列 A と数値 M が与えられます。A の M 番目の値を出力してください。
+n, m = gets.split.map(&:to_i)
+a = gets.split.map(&:to_i)
+puts a[m-1]
