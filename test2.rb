@@ -82,3 +82,13 @@ puts count
 n, m = gets.split.map(&:to_i)
 a = gets.split.map(&:to_i)
 puts a[m-1]
+
+# 要素数 N の数列 A と要素数 Q の数列 B が与えられます。 1 ≦ i ≦ Q の各 i について、i 行目に A の B_i 番目の値を出力してください。
+n = gets.to_i
+a = gets.split.map(&:to_i)
+q = gets.to_i
+b = gets.split.map(&:to_i)
+
+b.each do |i|
+  puts a[i-1]
+end
