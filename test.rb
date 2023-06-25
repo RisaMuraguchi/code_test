@@ -90,3 +90,9 @@ a = gets.split(' ').map(&:to_i) #1 行の入力を半角スペースで区切っ
 n = a.shift #shift メソッドは配列の先頭の要素を削除して取得することができる
 
 a.each { |val| puts val } 
+
+# 2 行目で与えられる N 個の文字列の入力
+n = gets.to_i
+s = gets.split(' ')
+
+s.each { |val| puts val }
